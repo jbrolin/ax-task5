@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Task 5</title>
+  <meta name="description" content="Programming task 5">
+  <meta name="author" content="Jonas Brolin Hjortsberg">
+</head>
+
+<body onLoad="javascript:run5();">
+  <script src="main.js"></script>
+Create an inverted index based on different texts.
+    <p>doc1:</p><textarea id="doc1" type="text" name="doc1" rows="10" cols="60">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</textarea>
+    
+      <p>doc2:</p><textarea id="doc2" type="text" name="doc2" rows="10" cols="60">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</textarea>
+      
+      <p>doc3:</p><textarea id="doc3" type="text" name="doc3" rows="10" cols="60">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+
+    <p>
+      <button onclick="javascript:run5();">Create index</button>
+    </p>
+    
+
+    <p>Search:<input id="searchString" type="text" name="searchString" /></p>
+    <button onclick="javascript:searchWord();">Search</button>
+    
+    <p>The search word is in following documents:<div id="outputResult"></div></p>
+</body>
+</html>
